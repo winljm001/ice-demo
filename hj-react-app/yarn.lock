@@ -1115,6 +1115,11 @@
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
+"@ice/stark-app@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.npmmirror.com/@ice/stark-app/download/@ice/stark-app-1.5.0.tgz#cb79e4d135c1f3ada455793b4b7ae325d1b8eb03"
+  integrity sha512-9fuCri48eZj6TnfPkCju4vVLhGurz+mt6lFx4JQFHhnRBQ5MuiBqRZg5F/3vdnJ7dAYQJlCXmHlQtBHok82z+g==
+
 "@loadable/component@^5.15.0":
   version "5.15.0"
   resolved "https://registry.npmjs.org/@loadable/component/-/component-5.15.0.tgz#48b9524237be553f48b158f8c9152593f3f3fded"

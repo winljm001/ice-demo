@@ -2,7 +2,6 @@ import { runApp, IAppConfig } from 'ice';
 import { ConfigProvider } from '@alifd/next';
 import PageLoading from '@/components/PageLoading';
 import FrameworkLayout from '@/layouts/FrameworkLayout';
-
 const appConfig: IAppConfig = {
   app: {
     rootId: 'icestark-container',
@@ -19,6 +18,7 @@ const appConfig: IAppConfig = {
           path: '/seller',
           title: '商家平台',
           loadScriptMode: 'import',
+
           // React app demo: https://github.com/ice-lab/react-materials/tree/master/scaffolds/icestark-child
           url: [
             'https://iceworks.oss-cn-hangzhou.aliyuncs.com/icestark/child-seller-ice-vite/build/js/index.js',
@@ -41,6 +41,16 @@ const appConfig: IAppConfig = {
           sandbox: true,
           // Angular app demo: https://github.com/ice-lab/icestark-child-apps/tree/master/child-common-angular
           entry: 'https://iceworks.oss-cn-hangzhou.aliyuncs.com/icestark/child-common-angular/index.html',
+        },
+        {
+          path: '/my-app',
+          title: 'my-app',
+          sandbox: true,
+          // props: { webpack_public_path: 'http://localhost:9000/' },
+          onLoadingApp: (app) => {
+            console.log('onLoadingApp', app);
+          },
+          entry: 'http://192.168.10.44:8080',
         },
       ];
       return apps;
