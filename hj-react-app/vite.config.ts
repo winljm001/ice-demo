@@ -30,6 +30,8 @@ export default defineConfig({
     reactRefresh(),
   ],
   server: {
+    port: 9002, // 你需要定义的端口号
+    open: true,
     https: false,
     proxy: {
       [`/graphql`]: {
