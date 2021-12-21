@@ -17,6 +17,21 @@ const asideMenuConfig = [
     icon: 'account',
   },
   {
+    name: 'MyApp',
+    path: '/my-app',
+    icon: 'account',
+  },
+  {
+    name: 'ViteReactApp',
+    path: '/vite-react-app',
+    icon: 'account',
+  },
+  {
+    name: 'HjReactApp',
+    path: '/hj-react-app',
+    icon: 'account',
+  },
+  {
     name: 'Angular',
     icon: 'set',
     children: [

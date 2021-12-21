@@ -1,18 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './publicPathConf'
 import './index.css';
 import App from './App';
 import { isInIcestark, setLibraryName } from '@ice/stark-app';
 import reportWebVitals from './reportWebVitals';
 
+// eslint-disable-next-line no-undef
+// if(isInIcestark()){
+// }
+
 export function mount(props) {
   ReactDOM.render(<App  />, props.container);
 }
 // // eslint-disable-next-line no-undef
-// __webpack_public_path__ = 'http://localhost:9001';
-// // if(isInIcestark()){
-// //   // eslint-disable-next-line no-undef
-// // }
 
 export function unmount(props) {
   ReactDOM.unmountComponentAtNode(props.container);

@@ -7,11 +7,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ice/stark-app": "^1.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
-    "vite": "^2.7.2"
+    "vite": "^2.7.2",
+    "vite-plugin-index-html": "^2.0.1"
   }
 }

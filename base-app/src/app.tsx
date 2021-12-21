@@ -50,7 +50,21 @@ const appConfig: IAppConfig = {
           onLoadingApp: (app) => {
             console.log('onLoadingApp', app);
           },
-          entry: 'http://192.168.10.44:8080',
+          entry: 'http://192.168.10.44:9000',
+        },
+        {
+          path: '/hj-react-app',
+          title: 'hj-react-app',
+          // sandbox: true,
+          loadScriptMode: 'import',
+          entry: 'http://192.168.10.44:9002',
+        },
+        {
+          path: '/vite-react-app',
+          title: 'vite-react-app',
+          sandbox: true,
+          loadScriptMode: 'import',
+          entry: 'http://localhost:9001/',
         },
       ];
       return apps;
